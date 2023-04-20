@@ -13,7 +13,7 @@ $packageList = nuget list -Source $nugetUrl -Prerelease | foreach { $_ -replace 
 foreach ($packageName in $packageList) {
     Write-Host "downloading package $packageName"
 
-    $packageVersions =  nuget list $packageName -AllVersions -Source $nugetUrl | foreach { $_ -replace '^([\w\.]+)', '' }
+    $packageVersions =  nuget list $packageName -AllVersions -Prerelease -Source $nugetUrl | foreach { $_ -replace '^([\w\.]+)', '' }
 
     foreach ($version in $packageVersions) {
         $downloadUrl = "$nugetUrl/Packages(Id='$packageName',Version='$version')/Download"
