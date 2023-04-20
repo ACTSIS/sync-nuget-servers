@@ -7,7 +7,7 @@ This is a Docker image that contains a PowerShell script to sync a NuGet feed wi
 ## Installation
 
 - Before run the following commands, you need to have Docker installed in your machine for windows containers.
-- You need to edit the parameters in sync.ps1:
+- You need to edit the parameters in [sync.ps1](sync.ps1):
 
 ```ps1
 # NuGet Feed Origin
@@ -51,7 +51,7 @@ Recuerda reemplazar "${PWD}" por la ruta absoluta de la carpeta que quieras usar
 The script verify-sync.ps1 is used to verify if the sync was successful.
 
 - Before run the following commands, you need to have Docker installed in your machine for windows containers.
-- You need to edit the parameters in verify-sync.ps1:
+- You need to edit the parameters in [verify-sync.ps1](verify-sync.ps1):
 
 ```ps1
 # NuGet Feed Origin
