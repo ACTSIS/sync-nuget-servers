@@ -58,7 +58,7 @@ The script verify-sync.ps1 is used to verify if the sync was successful.
 $nugetUrlSource = "https://first.nuget.com/nuget"
 
 # NuGet Feed Destination
-$nugetUrl = "https://second.nuget.com/api/v2/package/"
+$nugetUrl = "https://second.nuget.com/api/v2"
 ```
 
 Now you can run the script:
